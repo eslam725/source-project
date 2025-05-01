@@ -1,5 +1,4 @@
 import openmc
-
 # Define a thermal neutron source (0.0253 eV = 2.53e-8 MeV)
 source = openmc.Source()
 source.space = openmc.stats.Point((0.0, 0.0, 0.0))  # Center of geometry
