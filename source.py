@@ -10,6 +10,6 @@ settings = openmc.Settings()
 settings.source = source
 settings.batches = 100
 settings.inactive = 10
-settings.particles = 10000
+settings.particles = 1000000
 settings.run_mode = 'fixed source'  # Since we're not modeling a reactor
 settings.export_to_xml()
