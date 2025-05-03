@@ -4,13 +4,13 @@ source = openmc.Source()
 source.particle = 'gamma'
 source.space = openmc.stats.Point((0.0, 0.0, 0.0))  # Center of geometry
 source.angle = openmc.stats.Isotropic()
-source.energy = openmc.stats.Discrete([1e6], [1.0])  # Thermal neutrons
+source.energy = openmc.stats.Discrete([1e6], [1.0])  # GAMMA RAY WITH ENERGY OF 1 Mev
 
 # Simulation settings
 settings = openmc.Settings()
 settings.source = source
 settings.batches = 100
 settings.inactive = 10
-settings.particles = 10000
+settings.particles = 1000000
 settings.run_mode = 'fixed source'  # Since we're not modeling a reactor
 settings.export_to_xml()
